@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
+    <title>Tailwind Demo</title>
+</head>
+
+<body>
+    <div class="bg-midnight p-3 mb-2">
+        <div class="container flex justify-between items-center mx-auto w-2/3">
+            <h1 class="text-2xl">Tailwind</h1>
+            <button class="bg-teal-500 px-3 py-0.5 rounded-full">login</button>
+        </div>
+    </div>
+
+    <div class="container grid gap-4 grid-flow-col mx-auto w-2/3">
+        <div class="bg-slate-400 p-2 rounded-md">
+            <h2>Your Todos</h2>
+            <ul role="list" class="text-xs list-disc marker:text-sky-400">
+                <li>do homework</li>
+                <li>finish exam</li>
+                <li>feed dog</li>
+            </ul>
+        </div>
+        <div class="grid gap-2 col-span-2 bg-slate-400 p-2 rounded-md">
+            <div class="flex items-center row-span-2">
+                <h3>Your username</h3>
+            </div>
+            <div class="row-span-2 col-start-3 col-span-2">
+                <p class="text-xs">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+                    officia quod quo corrupti explicabo officiis eveniet doloremque
+                    dicta velit, fugit, nisi enim illo tempore temporibus magni tempora?
+                    Distinctio, repellendus exercitationem?
+                </p>
+            </div>
+        </div>
+        <form action="" class="bg-slate-400 col-span-2 col-start-2 row-start-2 p-2 rounded-md">
+            <label for="">Name: </label>
+            <input type="text">
+        </form>
+        <div class="bg-slate-400 p-2 rounded-md col-start-4">
+            <h2>Your Todos</h2>
+            <ul class="text-xs list-disc marker:text-sky-400">
+                <li>do homework</li>
+                <li>finish exam</li>
+                <li>feed dog</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
